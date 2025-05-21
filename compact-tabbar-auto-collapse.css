@@ -4,8 +4,7 @@
 	@media -moz-pref('zen.view.compact.hide-tabbar') or -moz-pref('zen.view.use-single-toolbar') {
 		&:not([zen-compact-animating]) {
 			#navigator-toolbox {
-				&[zen-has-empty-tab],
-				&[has-popup-menu] {
+				&[zen-has-empty-tab] {
 					/* Collapse the tab bar */
 					:root:not([zen-right-side="true"]) & {
 						left: calc(-1 * var(--actual-zen-sidebar-width) + 1px) !important;
@@ -18,6 +17,7 @@
 					/* Expand the tab bar */
 					&[zen-has-hover]:not(:has(#urlbar[zen-floating-urlbar="true"]:hover)),
 					&[zen-user-show],
+					&[has-popup-menu],
 					&[flash-popup],
 					&[movingtab],
 					&:has(.tabbrowser-tab:active),
