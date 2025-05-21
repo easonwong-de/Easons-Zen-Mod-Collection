@@ -1,0 +1,40 @@
+:root[zen-compact-mode="true"]:not([customizing]):not([inDOMFullscreen="true"]) {
+	@media -moz-pref('zen.view.compact.hide-tabbar') or -moz-pref('zen.view.use-single-toolbar') {
+		&:not([zen-compact-animating]) {
+			#navigator-toolbox {
+				&[zen-has-empty-tab],
+				&[has-popup-menu] {
+					/* Collapse the tab bar */
+					:root:not([zen-right-side="true"]) & {
+						left: calc(-1 * var(--actual-zen-sidebar-width) + 1px) !important;
+					}
+					:root[zen-right-side="true"] & {
+						right: calc(-1 * var(--actual-zen-sidebar-width) + 1px) !important;
+						left: auto !important;
+					}
+
+					/* Expand the tab bar */
+					&[zen-has-hover]:not(:has(#urlbar[zen-floating-urlbar="true"]:hover)),
+					&[zen-user-show],
+					&[flash-popup],
+					&[movingtab],
+					&:has(.tabbrowser-tab:active),
+					:root[zen-renaming-tab="true"] &,
+					&:has(
+							*:is([panelopen="true"], [open="true"], #urlbar:focus-within, [breakout-extend="true"]):not(
+									#urlbar[zen-floating-urlbar="true"]
+								):not(tab):not(.zen-compact-mode-ignore)
+						) {
+						:root:not([zen-right-side="true"]) & {
+							left: calc(var(--zen-element-separation) / -2 - 1px) !important;
+						}
+						:root[zen-right-side="true"] & {
+							right: calc(var(--zen-element-separation) / -2 - 1px) !important;
+							left: auto !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
