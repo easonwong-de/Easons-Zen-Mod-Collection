@@ -23,7 +23,7 @@
 					&:has(.tabbrowser-tab:active),
 					:root[zen-renaming-tab="true"] &,
 					&:has(
-							*:is([panelopen="true"], #urlbar:focus-within, [breakout-extend="true"]):not(
+							*:is([panelopen="true"], [open="true"], #urlbar:focus-within, [breakout-extend="true"]):not(
 									#urlbar[zen-floating-urlbar="true"]
 								):not(tab):not(.zen-compact-mode-ignore)
 						) {
