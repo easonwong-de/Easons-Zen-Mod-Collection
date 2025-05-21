@@ -1,3 +1,5 @@
+/* Applies a greyscale filter on extension icons in tabbar, navbar, and URL bar. */
+
 #nav-bar-customization-target > .unified-extensions-item,
 #zen-sidebar-top-buttons-customization-target > .unified-extensions-item,
 #urlbar #page-action-buttons {
