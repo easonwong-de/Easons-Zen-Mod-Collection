@@ -1,0 +1,5 @@
+/* Keeps the macOS window control buttons colourful, as long as the window has focus. */
+
+.titlebar-buttonbox {
+	opacity: 1 !important;
+}
