@@ -1,5 +1,8 @@
 # Adaptive Zen
 
-This mod adds support for “Adaptive Tab Bar Colour” to the Zen browser, allowing the tab bar to dynamically match the active website's theme for a more integrated browsing experience.
+This mod adds support for “Adaptive Tab Bar Colour” to the Zen browser.
+
+> [!NOTE]
+> This mod is currently experimental and may cause minor visual issues.
 
 ![preview](preview.png)
