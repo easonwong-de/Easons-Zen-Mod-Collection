@@ -1,4 +1,4 @@
-/* Hides the workspace indicator in tabbar. */
+/* Hides the workspace indicator in the tabbar. */
 
 .zen-current-workspace-indicator {
 	display: none !important;

@@ -1,4 +1,4 @@
-/* Prevents the tabbar from expanding when there's no tab / menu bar dropdown is opened. */
+/* Prevents the tabbar from expanding when there's no tab is opened. */
 
 :root[zen-compact-mode="true"]:not([customizing]):not([inDOMFullscreen="true"]) {
 	@media -moz-pref('zen.view.compact.hide-tabbar') or -moz-pref('zen.view.use-single-toolbar') {
