@@ -2,8 +2,9 @@
 
 #nav-bar-customization-target > .unified-extensions-item,
 #zen-sidebar-top-buttons-customization-target > .unified-extensions-item,
-#page-action-buttons > .urlbar-addon-page-action {
-	filter: saturate(0%) brightness(120%) !important;
+#page-action-buttons > .urlbar-addon-page-action > .urlbar-icon,
+#star-button {
+	filter: saturate(0%) brightness(150%) !important;
 }
 
 /* Keeps the macOS window control buttons colourful, as long as the window has focus. */
