@@ -1,0 +1,16 @@
+:root {
+	--zen-main-browser-background: var(--lwt-accent-color) !important;
+}
+
+/* Remove shadow around the tab panel & side bar */
+
+.browserSidebarContainer,
+#zen-tabbox-wrapper #sidebar-box {
+	box-shadow: none !important;
+}
+
+/* Removes tab outline */
+
+.tab-background {
+	outline: none !important;
+}
