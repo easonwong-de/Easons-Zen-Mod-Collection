@@ -58,7 +58,6 @@
 }
 
 /* "Zoom" button groups */
-
 :is(panelview, #widget-overflow-fixed-list) .toolbaritem-combined-buttons {
 	margin: 0 !important;
 }
@@ -94,7 +93,6 @@
 }
 
 /* Animation for widget overflow list re-arrangement */
-
 #widget-overflow-fixed-list > toolbarpaletteitem:not([notransition])[place="panel"] {
 	border-block-width: 0 !important;
 	transition: padding var(--drag-drop-transition-duration) ease-in-out !important;
